@@ -1,0 +1,16 @@
+PODS:
+  - MicroKonex (0.1.0)
+
+DEPENDENCIES:
+  - MicroKonex (from `../`)
+
+EXTERNAL SOURCES:
+  MicroKonex:
+    :path: ../
+
+SPEC CHECKSUMS:
+  MicroKonex: f704cf55cd680a2b9c542d87c9382529593543f5
+
+PODFILE CHECKSUM: 59d9b839deb73bc404a9ee0a60759e3efc2cd1e4
+
+COCOAPODS: 1.1.1
