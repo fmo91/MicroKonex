@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MicroKonex_Example' do
+  pod 'MicroKonex', :path => '../'
+
+  target 'MicroKonex_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
