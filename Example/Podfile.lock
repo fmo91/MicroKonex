@@ -1,5 +1,11 @@
 PODS:
-  - MicroKonex (0.1.0)
+  - Konex (0.2.0):
+    - ObjectMapper (~> 2.2)
+  - Microfutures (0.1.2)
+  - MicroKonex (0.1.0):
+    - Konex (~> 0.2)
+    - Microfutures (~> 0.1)
+  - ObjectMapper (2.2.2)
 
 DEPENDENCIES:
   - MicroKonex (from `../`)
@@ -9,7 +15,10 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  MicroKonex: f704cf55cd680a2b9c542d87c9382529593543f5
+  Konex: 091fab4054a9241418f006fda25523f0bede3649
+  Microfutures: a7256087d89f835e8b2fdb72f7d6864ad3dd3fd9
+  MicroKonex: d769a7584d5b647c318fd0bb44d0b548c41c84de
+  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
 
 PODFILE CHECKSUM: 59d9b839deb73bc404a9ee0a60759e3efc2cd1e4
 

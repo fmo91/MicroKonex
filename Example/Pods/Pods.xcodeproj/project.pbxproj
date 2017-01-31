@@ -7,64 +7,240 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31082D776E3C30792FF91E9B3C8F18F2 /* MicroKonex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B336A7B7197B7320559C74E4C172 /* MicroKonex-dummy.m */; };
-		52ADCF5AE68EA25846D6B68E9FA62B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		716327D831780D4C368452548DAF52F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		7EFD6527A4281CB7AA7F13D41F16F75B /* MicroKonex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605A601CFE09E8F07535C2D48BBE053 /* MicroKonex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A39C6902873C8E64EA65514548D9212F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		BE4845E9E3526EB862DF1470AECE03D9 /* Pods-MicroKonex_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F17602622137B29C267CC5B2F67A6B /* Pods-MicroKonex_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD25E19B564D7AAAEE8B558E8685FFC5 /* Pods-MicroKonex_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5204EE83D9D806433BB4E524C1407909 /* Pods-MicroKonex_Example-dummy.m */; };
-		EF1C2136E0DC30F502D028F9DDA762CF /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AC981FAFB4C9B18534F5A590D1D688 /* ReplaceMe.swift */; };
+		011F479985EE24FE1205AEFD5DAAB449 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC9DF391DE9DD0F554CA264940DB0E /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		03B558BC5758EE9E0D94CC4405DE5078 /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0862AE9902C41A4E5CCE1D0819C231A0 /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		084D6DC0C7F243C1035E77DA017EBF34 /* Microfutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D08D11B23BF3006C06F9B186AD204BF /* Microfutures.swift */; };
+		09105EC72457C392261970B54A3FA069 /* MicroKonex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F1B336A7B7197B7320559C74E4C172 /* MicroKonex-dummy.m */; };
+		0F1989CAB7E1A9C9C2104A31B2924F10 /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A3A36AE610177A040A73571747AD4DC /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1051B0CEF129B04FA71AE9DD3E53A1D8 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BFA39459FFE58145575B473B59F0D0 /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1173A6F340C459CF4A21EE0607E4259E /* EnumOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33FF10F4BF7A65A1D9B991A5A785EF7 /* EnumOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1597FDAFFC79F55903CACA3D6E5F749F /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFDC7949BC83BFAAB159BC77D6CC355 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		19B937F803278BFEAAFF2262A7E81188 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA60A9C601392A2473A0DEFE1A3A647 /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1B0871B6BA50D218499BC1728DB26310 /* DictionaryTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9721B41E6D2DF2DA7FAA57A587B2EA5 /* DictionaryTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2379A511FB927E79E783B1D922121D6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29120816049C918165345D523B5DBE6E /* Foundation.framework */; };
+		2CACFA60DAA8E8ADD0E4C10DF2D72579 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29120816049C918165345D523B5DBE6E /* Foundation.framework */; };
+		2EC0CC3EE854FAEAE8980CA71239EB2A /* Konex-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C9E1F822E5254E95F0ED30A3DF145 /* Konex-dummy.m */; };
+		3232D920146A5E6D99F0CF0A6922E638 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62288219B9F9570182499DDAA02E4B3B /* Map.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		38D9B9435549B179264AC16782C9AC1D /* HexColorTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5FDD46E68E4E4C25319F9809541CBC0 /* HexColorTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		39ADDF47CD79F5E77F48D75F34C93808 /* KonexError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E5D28A6F7CC732D34E465E605F99CF7 /* KonexError.swift */; };
+		39F9551AD9E6B08C544DAA176CE17FB6 /* Microfutures-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 481E55937FEF7943737106915BCABF86 /* Microfutures-dummy.m */; };
+		3D0F678CC1B8BF169F2D7740A0A6DEA0 /* KonexRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C07A118EA3D189D7C61A236A3C5A7F7 /* KonexRequest.swift */; };
+		4D00CDDB3F39321614A551FD3B27D013 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322B3261A289DA1BC7060D04F4AD01D2 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4E4BE7AD74B7A32F33BE7BDFBF81D291 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05D545B686709FC85DE2E7AFB092E32 /* ObjectMapper.framework */; };
+		52ADCF5AE68EA25846D6B68E9FA62B8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29120816049C918165345D523B5DBE6E /* Foundation.framework */; };
+		5369BF86141293A6CC5AE2B93CEFB84A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29120816049C918165345D523B5DBE6E /* Foundation.framework */; };
+		5567F97FD48D54B19030A85211BAB331 /* Konex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA16FD0B4101D9C8ECB28FDD0D17048D /* Konex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5999B5CE21686A77C1588A2503B386DC /* DataTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7368DA2BF9B9D2B90054E7258B7A1E /* DataTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		60EA9ACD258AF59CA8EA6EB9AD16BD93 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B05D545B686709FC85DE2E7AFB092E32 /* ObjectMapper.framework */; };
+		636AEB2C695A89E1BA9761E88DE53EFD /* KonexComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE852489802D4FD1523FC99F2CC9E8FB /* KonexComponent.swift */; };
+		655E83D07A7AFB5CFA562449B3047656 /* Konex+Microfutures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 461368AAA9695FA7E8475755AA437046 /* Konex+Microfutures.swift */; };
+		69578E44E5F9D81E0BA936E3A24B4616 /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A271ACD25C16C4060928E34315ABAB1D /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6D0DE7221C9B63DDD098D9565DE7133E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29120816049C918165345D523B5DBE6E /* Foundation.framework */; };
+		6DE51BD5A07584CFFB9C4E4D9C88B2B3 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C7B2CEB11CD7FC7140F080ECF908A2 /* ObjectMapper-dummy.m */; };
+		722AF1184F5BCEC7CCAC637CBAFB0AB2 /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC94F4A99793D1176EB93E869BB9DFF /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		738C8C9BE40E231E32B6EF8DA0848527 /* Pods-MicroKonex_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5204EE83D9D806433BB4E524C1407909 /* Pods-MicroKonex_Example-dummy.m */; };
+		79606121234A59422ED5C0ED2799A9AA /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C9C9580909CF91C05B17C8F5DE41D7 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7A3604917516BAA18607858A02FC6742 /* Konex.swift in Sources */ = {isa = PBXBuildFile; fileRef = F530F945674194FC7FAA6EE6CE8CDF16 /* Konex.swift */; };
+		7BDC40D87E5E57BC9245F7E03F0053A9 /* KonexReponseProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A56DE0508B6EAD738E3D730B81ED4BF /* KonexReponseProcessor.swift */; };
+		94ABA30815E7EA598DE148A8574270A8 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07A9E7E96C40CDA78392F3C3ABAD7BE5 /* DateFormatterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AB3426F1BE0626881E4B1FE80644F5C7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29120816049C918165345D523B5DBE6E /* Foundation.framework */; };
+		B313AC90A8C9585309D3F6DAF12B3E5F /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C5D0B432111ED0CE1FB07E0C327277 /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B57254F1EA7FE4B3F1DA17E738E91CAA /* Konex.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CBC41CB02E0C0BF6F83553A60383128 /* Konex.framework */; };
+		B75E7DA353984475DF0A4228C7596A87 /* KonexResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7478A38E65B9E36F9542E8B93BAA8E /* KonexResponseValidator.swift */; };
+		B9DE8369BD711BA6955FE2EBD1F51AC2 /* MapError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAA5D68E81FDB64BD9EF3D8B20E3BCC /* MapError.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C17AFCCB17247EE4E30278A6679A3ED8 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9F91D17B700CB59B7F2A6C01772A68 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C693A41745F7188CCAC696D6D16C780D /* Pods-MicroKonex_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A0F17602622137B29C267CC5B2F67A6B /* Pods-MicroKonex_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA385C420449D50AC119EB2AFC762CDC /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C08F554D708139A4561B1468993DBC8 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D15E7577E1D2B47DEAFD78D546AEDE45 /* TransformOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D313663008FF413968FC1FE0BE25F4DD /* TransformOperators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D24A6680CFEBC823B0705BDED94AFFEA /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E3921ABDBD6829EA6D3DF0ECBEB4ADB /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D4138442FE971C860B601336141A6D74 /* Microfutures.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67F92413BCC0684A14227A11B98DB639 /* Microfutures.framework */; };
+		D5690AC80520A2FE36528DD476D53109 /* MicroKonex-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605A601CFE09E8F07535C2D48BBE053 /* MicroKonex-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFD1930D2FA1B9B660346F367B5B5D4D /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE0662F776BB4320F72651695109CC8 /* HTTPMethod.swift */; };
+		E567E7B374897DEC9E8B7BD71E381D74 /* ImmutableMappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CAE71A0AE4E14AAA3E6CAD294A5B269 /* ImmutableMappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EA08F112A498CF284440DE7AE46D932D /* NetworkLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3BB7B0FD8089139678799B11CAB43 /* NetworkLogger.swift */; };
+		EF98E3D061551E3E8CE9EF72B2B23B5B /* KonexClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A1503732743532D1BA854B14D7A1543 /* KonexClient.swift */; };
 		F2FEDB1BC4FEA8E231E6A09A290C7A4A /* Pods-MicroKonex_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D871BFDD4A99A86D30DD9E151DA035C4 /* Pods-MicroKonex_Tests-dummy.m */; };
+		F8DAB8BB2DDCC6EB0364E46B00F73E47 /* Microfutures-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CAD3F21BEEC7731D3D8D388B470709E /* Microfutures-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBD64A7021290BE1A5E54B695AE67CC7 /* KonexPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1783B743C347966449FB49DA6021E3 /* KonexPlugin.swift */; };
 		FE082B86AC23C1E20EE86BF926BB1CC0 /* Pods-MicroKonex_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F56EE02C667D02A0A5F8CBC942D3F729 /* Pods-MicroKonex_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		230E021073293FDB3FADF3CECA90E843 /* PBXContainerItemProxy */ = {
+		0343614BF860B783B2F604BBE2050560 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FD96E0828FB2CA975E13100F40755C14;
+			remoteGlobalIDString = C55F46FB22CC9A72BE9BC536B20DED09;
 			remoteInfo = MicroKonex;
+		};
+		0CE3395EBFC42BECBDC742B180CBDC8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 899382291472AFBE15F4BCC117F9CBD5;
+			remoteInfo = Microfutures;
+		};
+		19E927C9223BC0BED99C57122DF5BF44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58506A1C2745624C74DB9B008D489C55;
+			remoteInfo = ObjectMapper;
+		};
+		341E5D4A986D587CA54256BD9923262A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58506A1C2745624C74DB9B008D489C55;
+			remoteInfo = ObjectMapper;
+		};
+		4792F3ECE0D2E2EF2EEA8C5117F5D50E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40EA59021D2FD42DD0B4DE4D4D9EFAA6;
+			remoteInfo = Konex;
+		};
+		4D905D7F35802D57CC22F025904C3A28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 899382291472AFBE15F4BCC117F9CBD5;
+			remoteInfo = Microfutures;
+		};
+		6B42C4768023D97FE1AE1AA6A47E623A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58506A1C2745624C74DB9B008D489C55;
+			remoteInfo = ObjectMapper;
+		};
+		B4DE0D96CB8DCB11ABF768A8E2601DB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 40EA59021D2FD42DD0B4DE4D4D9EFAA6;
+			remoteInfo = Konex;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0EA7009ABDEDC95CC74717D8891D9686 /* MicroKonex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MicroKonex.modulemap; sourceTree = "<group>"; };
+		07A9E7E96C40CDA78392F3C3ABAD7BE5 /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = Sources/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		07C7B2CEB11CD7FC7140F080ECF908A2 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
+		0862AE9902C41A4E5CCE1D0819C231A0 /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
+		0C07A118EA3D189D7C61A236A3C5A7F7 /* KonexRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KonexRequest.swift; path = Konex/Classes/KonexRequest.swift; sourceTree = "<group>"; };
+		0EA7009ABDEDC95CC74717D8891D9686 /* MicroKonex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MicroKonex.modulemap; sourceTree = "<group>"; };
 		1087453C7094EDED1FE24CC19C606D46 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		136A4CB2D3AE7FBBF5818BDB1A6862A9 /* Pods_MicroKonex_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroKonex_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		227EB54D9C97679F3A36AA388E33CECB /* Pods_MicroKonex_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MicroKonex_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		10B99D3E8C6D6A67F89DB4AE72A470AA /* MicroKonex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MicroKonex.framework; path = MicroKonex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E945C1A082BE3B406F542954B21397D /* Konex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Konex-prefix.pch"; sourceTree = "<group>"; };
+		1F4C9E1F822E5254E95F0ED30A3DF145 /* Konex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Konex-dummy.m"; sourceTree = "<group>"; };
+		1FF065269D4F2FA107E75FE4C2B5E6DF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		245648C9D6312A21A7779845D2C38A88 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
+		29120816049C918165345D523B5DBE6E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		2CAD3F21BEEC7731D3D8D388B470709E /* Microfutures-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Microfutures-umbrella.h"; sourceTree = "<group>"; };
+		2D08D11B23BF3006C06F9B186AD204BF /* Microfutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Microfutures.swift; path = Microfutures/Classes/Microfutures.swift; sourceTree = "<group>"; };
+		2E5D28A6F7CC732D34E465E605F99CF7 /* KonexError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KonexError.swift; path = Konex/Classes/KonexError.swift; sourceTree = "<group>"; };
+		322B3261A289DA1BC7060D04F4AD01D2 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = Sources/ToJSON.swift; sourceTree = "<group>"; };
 		36684D96CA628F3C254C7C3E0C7D6B0E /* Pods-MicroKonex_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MicroKonex_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		37AC981FAFB4C9B18534F5A590D1D688 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		38E56719FD757AF53E596D583418A00D /* Pods-MicroKonex_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MicroKonex_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3A56DE0508B6EAD738E3D730B81ED4BF /* KonexReponseProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KonexReponseProcessor.swift; path = Konex/Classes/KonexReponseProcessor.swift; sourceTree = "<group>"; };
+		3B1783B743C347966449FB49DA6021E3 /* KonexPlugin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KonexPlugin.swift; path = Konex/Classes/KonexPlugin.swift; sourceTree = "<group>"; };
+		3BAC9DF391DE9DD0F554CA264940DB0E /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = Sources/Mapper.swift; sourceTree = "<group>"; };
+		3F7478A38E65B9E36F9542E8B93BAA8E /* KonexResponseValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KonexResponseValidator.swift; path = Konex/Classes/KonexResponseValidator.swift; sourceTree = "<group>"; };
+		40601CAF8849CF048CD1491E0684A305 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		461368AAA9695FA7E8475755AA437046 /* Konex+Microfutures.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Konex+Microfutures.swift"; sourceTree = "<group>"; };
+		481E55937FEF7943737106915BCABF86 /* Microfutures-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Microfutures-dummy.m"; sourceTree = "<group>"; };
 		5204EE83D9D806433BB4E524C1407909 /* Pods-MicroKonex_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MicroKonex_Example-dummy.m"; sourceTree = "<group>"; };
+		5C08F554D708139A4561B1468993DBC8 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = Sources/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
+		5CC94F4A99793D1176EB93E869BB9DFF /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = Sources/URLTransform.swift; sourceTree = "<group>"; };
 		5EF53208811E918D2CFC0C35EC7080E3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62288219B9F9570182499DDAA02E4B3B /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = Sources/Map.swift; sourceTree = "<group>"; };
 		62BED7478DB83C74847144CE31277069 /* Pods-MicroKonex_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MicroKonex_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		661D2EB73DE3A96FAC8526FCC16D0BA8 /* Pods-MicroKonex_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MicroKonex_Example-frameworks.sh"; sourceTree = "<group>"; };
+		67F92413BCC0684A14227A11B98DB639 /* Microfutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Microfutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6854DF23590C53CB4F0A636B650CED9E /* Pods-MicroKonex_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MicroKonex_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6CFD642F8384DAEF25E9725A59E0B6D1 /* MicroKonex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MicroKonex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CAE71A0AE4E14AAA3E6CAD294A5B269 /* ImmutableMappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImmutableMappable.swift; path = Sources/ImmutableMappable.swift; sourceTree = "<group>"; };
+		6CBC41CB02E0C0BF6F83553A60383128 /* Konex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Konex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E894F3FB5A2825623B651B16E7AA208 /* Microfutures.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Microfutures.framework; path = Microfutures.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		72EDEAE8FE92636138C6D9655E3FE96E /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
 		7657F3937F5AE21DC5893A8B865ADBE8 /* MicroKonex-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MicroKonex-prefix.pch"; sourceTree = "<group>"; };
+		7A1503732743532D1BA854B14D7A1543 /* KonexClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KonexClient.swift; path = Konex/Classes/KonexClient.swift; sourceTree = "<group>"; };
+		7E3921ABDBD6829EA6D3DF0ECBEB4ADB /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = Sources/EnumTransform.swift; sourceTree = "<group>"; };
 		7EF997E766C418D9D3B22B614A11B936 /* Pods-MicroKonex_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MicroKonex_Tests-resources.sh"; sourceTree = "<group>"; };
 		80F1B336A7B7197B7320559C74E4C172 /* MicroKonex-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MicroKonex-dummy.m"; sourceTree = "<group>"; };
+		8472011CBC551AB9FA845CBA92E8571F /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
 		8605A601CFE09E8F07535C2D48BBE053 /* MicroKonex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MicroKonex-umbrella.h"; sourceTree = "<group>"; };
 		8AAF5F52C37B102DD4F49C022C9A508F /* Pods-MicroKonex_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MicroKonex_Example.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		905FBC5AB8310ACBEDA2A529D250B978 /* Konex.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Konex.modulemap; sourceTree = "<group>"; };
+		91FA911CE0FD949AA4EAB911830AE541 /* Pods_MicroKonex_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MicroKonex_Tests.framework; path = "Pods-MicroKonex_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A3A36AE610177A040A73571747AD4DC /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = Sources/TransformType.swift; sourceTree = "<group>"; };
+		9CD03D6AD117597BEE8B6580D9DE8C18 /* Konex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Konex.xcconfig; sourceTree = "<group>"; };
+		9E54225F5AFB49E71D8558A7F2346477 /* Pods_MicroKonex_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MicroKonex_Example.framework; path = "Pods-MicroKonex_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FF4D5BCF5D906F91DD7C3A892987BB6 /* Pods-MicroKonex_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MicroKonex_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A0F17602622137B29C267CC5B2F67A6B /* Pods-MicroKonex_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MicroKonex_Example-umbrella.h"; sourceTree = "<group>"; };
-		A46C55F6DA3EA1636EEB6B088430716F /* Pods-MicroKonex_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MicroKonex_Tests.modulemap"; sourceTree = "<group>"; };
+		A271ACD25C16C4060928E34315ABAB1D /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = Sources/FromJSON.swift; sourceTree = "<group>"; };
+		A46C55F6DA3EA1636EEB6B088430716F /* Pods-MicroKonex_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MicroKonex_Tests.modulemap"; sourceTree = "<group>"; };
+		A5FDD46E68E4E4C25319F9809541CBC0 /* HexColorTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HexColorTransform.swift; path = Sources/HexColorTransform.swift; sourceTree = "<group>"; };
+		ABFDC7949BC83BFAAB159BC77D6CC355 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = Sources/TransformOf.swift; sourceTree = "<group>"; };
+		AD7368DA2BF9B9D2B90054E7258B7A1E /* DataTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataTransform.swift; path = Sources/DataTransform.swift; sourceTree = "<group>"; };
+		AE0EB8B33E2212C475077B2BFDDE61F5 /* Microfutures.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Microfutures.modulemap; sourceTree = "<group>"; };
+		AEE0662F776BB4320F72651695109CC8 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Konex/Classes/HTTPMethod.swift; sourceTree = "<group>"; };
+		AEE438A591F649BEC7B53DED69624E91 /* Microfutures.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Microfutures.xcconfig; sourceTree = "<group>"; };
+		B05D545B686709FC85DE2E7AFB092E32 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2BF03227BCCD2DFF4463F89935ABAF7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBAA5D68E81FDB64BD9EF3D8B20E3BCC /* MapError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MapError.swift; path = Sources/MapError.swift; sourceTree = "<group>"; };
 		BD5F8A55F259462532612F744538FE79 /* Pods-MicroKonex_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MicroKonex_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BE852489802D4FD1523FC99F2CC9E8FB /* KonexComponent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KonexComponent.swift; path = Konex/Classes/KonexComponent.swift; sourceTree = "<group>"; };
+		BF323889D5B0D1CF5CF82693F03096BB /* Microfutures-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Microfutures-prefix.pch"; sourceTree = "<group>"; };
 		C003FEDD16CF746234D4F19A3287E382 /* MicroKonex.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MicroKonex.xcconfig; sourceTree = "<group>"; };
-		C444E234F9760EE6969CE245767FA992 /* Pods-MicroKonex_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-MicroKonex_Example.modulemap"; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C444E234F9760EE6969CE245767FA992 /* Pods-MicroKonex_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-MicroKonex_Example.modulemap"; sourceTree = "<group>"; };
+		C4C9C9580909CF91C05B17C8F5DE41D7 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = Sources/DateTransform.swift; sourceTree = "<group>"; };
+		C8BFA39459FFE58145575B473B59F0D0 /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = Sources/Mappable.swift; sourceTree = "<group>"; };
+		CE9F91D17B700CB59B7F2A6C01772A68 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Sources/Operators.swift; sourceTree = "<group>"; };
 		CF7040C1E333DD86E63246B8F7982879 /* Pods-MicroKonex_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MicroKonex_Example-resources.sh"; sourceTree = "<group>"; };
+		D313663008FF413968FC1FE0BE25F4DD /* TransformOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOperators.swift; path = Sources/TransformOperators.swift; sourceTree = "<group>"; };
+		D33FF10F4BF7A65A1D9B991A5A785EF7 /* EnumOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumOperators.swift; path = Sources/EnumOperators.swift; sourceTree = "<group>"; };
 		D871BFDD4A99A86D30DD9E151DA035C4 /* Pods-MicroKonex_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MicroKonex_Tests-dummy.m"; sourceTree = "<group>"; };
+		DCA60A9C601392A2473A0DEFE1A3A647 /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = Sources/ISO8601DateTransform.swift; sourceTree = "<group>"; };
 		DE0E4D509C494D9A23F01D0568B9F7B9 /* Pods-MicroKonex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MicroKonex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E0672770088FC49E4004BF48442D0D47 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E935A7276271FFEF92A9508AC73B3B86 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ObjectMapper.framework; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9721B41E6D2DF2DA7FAA57A587B2EA5 /* DictionaryTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DictionaryTransform.swift; path = Sources/DictionaryTransform.swift; sourceTree = "<group>"; };
+		E9C5D0B432111ED0CE1FB07E0C327277 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = Sources/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		EA16FD0B4101D9C8ECB28FDD0D17048D /* Konex-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Konex-umbrella.h"; sourceTree = "<group>"; };
 		F168EF11E0B805A4503A78110ADB4266 /* Pods-MicroKonex_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MicroKonex_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F530F945674194FC7FAA6EE6CE8CDF16 /* Konex.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Konex.swift; path = Konex/Classes/Konex.swift; sourceTree = "<group>"; };
 		F56EE02C667D02A0A5F8CBC942D3F729 /* Pods-MicroKonex_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MicroKonex_Tests-umbrella.h"; sourceTree = "<group>"; };
+		F8A3BB7B0FD8089139678799B11CAB43 /* NetworkLogger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkLogger.swift; path = Konex/Classes/NetworkLogger.swift; sourceTree = "<group>"; };
+		FBB78589B4069982FC10B9F99C873293 /* Konex.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Konex.framework; path = Konex.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		336C9C5F00A209C14C174F99F12E0468 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CACFA60DAA8E8ADD0E4C10DF2D72579 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		397650F652994FB027D56AFEE3293641 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5369BF86141293A6CC5AE2B93CEFB84A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3BF0C1016963F0F736AA344C097BD41C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D0DE7221C9B63DDD098D9565DE7133E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3CEADD10A1FC0B2BE8A6FF60BF055F48 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -73,33 +249,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		62974027408963C6F754DB9C5A3D7AB1 /* Frameworks */ = {
+		7165CF7464D3D232D5035A16C213F479 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				716327D831780D4C368452548DAF52F1 /* Foundation.framework in Frameworks */,
+				AB3426F1BE0626881E4B1FE80644F5C7 /* Foundation.framework in Frameworks */,
+				4E4BE7AD74B7A32F33BE7BDFBF81D291 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8C63228456CC447AB67D0BAEAD0C90C7 /* Frameworks */ = {
+		9902BD0239276BB974A4A7D69350FBF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39C6902873C8E64EA65514548D9212F /* Foundation.framework in Frameworks */,
+				2379A511FB927E79E783B1D922121D6E /* Foundation.framework in Frameworks */,
+				B57254F1EA7FE4B3F1DA17E738E91CAA /* Konex.framework in Frameworks */,
+				D4138442FE971C860B601336141A6D74 /* Microfutures.framework in Frameworks */,
+				60EA9ACD258AF59CA8EA6EB9AD16BD93 /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		15C091ECC556A5105310D3E098FEAB34 /* Products */ = {
+		12B89FE8FCA390BABC32C52B67085F5F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6CFD642F8384DAEF25E9725A59E0B6D1 /* MicroKonex.framework */,
-				227EB54D9C97679F3A36AA388E33CECB /* Pods_MicroKonex_Example.framework */,
-				136A4CB2D3AE7FBBF5818BDB1A6862A9 /* Pods_MicroKonex_Tests.framework */,
+				1FF065269D4F2FA107E75FE4C2B5E6DF /* Info.plist */,
+				AE0EB8B33E2212C475077B2BFDDE61F5 /* Microfutures.modulemap */,
+				AEE438A591F649BEC7B53DED69624E91 /* Microfutures.xcconfig */,
+				481E55937FEF7943737106915BCABF86 /* Microfutures-dummy.m */,
+				BF323889D5B0D1CF5CF82693F03096BB /* Microfutures-prefix.pch */,
+				2CAD3F21BEEC7731D3D8D388B470709E /* Microfutures-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/Microfutures";
 			sourceTree = "<group>";
 		};
 		188B511B4BB4DA5D6AAE02C10764A874 /* Pods-MicroKonex_Tests */ = {
@@ -123,8 +307,9 @@
 		23EF1F33D768647C653CFA5B8C486F25 /* MicroKonex */ = {
 			isa = PBXGroup;
 			children = (
-				51D1AC638508C1651A55C357B10A708C /* Classes */,
+				3F63EDB14DC15806597EA82A684F87C6 /* Classes */,
 			);
+			name = MicroKonex;
 			path = MicroKonex;
 			sourceTree = "<group>";
 		};
@@ -142,12 +327,62 @@
 			path = "Example/Pods/Target Support Files/MicroKonex";
 			sourceTree = "<group>";
 		};
-		51D1AC638508C1651A55C357B10A708C /* Classes */ = {
+		30ABCD63EB7A48198C5A391DE283DEA1 /* Microfutures */ = {
 			isa = PBXGroup;
 			children = (
-				37AC981FAFB4C9B18534F5A590D1D688 /* ReplaceMe.swift */,
+				2D08D11B23BF3006C06F9B186AD204BF /* Microfutures.swift */,
+				12B89FE8FCA390BABC32C52B67085F5F /* Support Files */,
 			);
+			name = Microfutures;
+			path = Microfutures;
+			sourceTree = "<group>";
+		};
+		38C4E7EC5311DA59E51F1E336BAC9A8D /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				5C08F554D708139A4561B1468993DBC8 /* CustomDateFormatTransform.swift */,
+				AD7368DA2BF9B9D2B90054E7258B7A1E /* DataTransform.swift */,
+				07A9E7E96C40CDA78392F3C3ABAD7BE5 /* DateFormatterTransform.swift */,
+				C4C9C9580909CF91C05B17C8F5DE41D7 /* DateTransform.swift */,
+				E9721B41E6D2DF2DA7FAA57A587B2EA5 /* DictionaryTransform.swift */,
+				D33FF10F4BF7A65A1D9B991A5A785EF7 /* EnumOperators.swift */,
+				7E3921ABDBD6829EA6D3DF0ECBEB4ADB /* EnumTransform.swift */,
+				A271ACD25C16C4060928E34315ABAB1D /* FromJSON.swift */,
+				A5FDD46E68E4E4C25319F9809541CBC0 /* HexColorTransform.swift */,
+				6CAE71A0AE4E14AAA3E6CAD294A5B269 /* ImmutableMappable.swift */,
+				DCA60A9C601392A2473A0DEFE1A3A647 /* ISO8601DateTransform.swift */,
+				62288219B9F9570182499DDAA02E4B3B /* Map.swift */,
+				BBAA5D68E81FDB64BD9EF3D8B20E3BCC /* MapError.swift */,
+				C8BFA39459FFE58145575B473B59F0D0 /* Mappable.swift */,
+				3BAC9DF391DE9DD0F554CA264940DB0E /* Mapper.swift */,
+				E9C5D0B432111ED0CE1FB07E0C327277 /* NSDecimalNumberTransform.swift */,
+				CE9F91D17B700CB59B7F2A6C01772A68 /* Operators.swift */,
+				322B3261A289DA1BC7060D04F4AD01D2 /* ToJSON.swift */,
+				ABFDC7949BC83BFAAB159BC77D6CC355 /* TransformOf.swift */,
+				D313663008FF413968FC1FE0BE25F4DD /* TransformOperators.swift */,
+				9A3A36AE610177A040A73571747AD4DC /* TransformType.swift */,
+				5CC94F4A99793D1176EB93E869BB9DFF /* URLTransform.swift */,
+				C41E439F5150B563CE0A217CEC76C1CA /* Support Files */,
+			);
+			name = ObjectMapper;
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		3F63EDB14DC15806597EA82A684F87C6 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				461368AAA9695FA7E8475755AA437046 /* Konex+Microfutures.swift */,
+			);
+			name = Classes;
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		5825AFA5A8F80EED96437F1BC21F1B93 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				29120816049C918165345D523B5DBE6E /* Foundation.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		5EBAAB1E13611244FA4250E1310B001B /* MicroKonex */ = {
@@ -158,14 +393,6 @@
 			);
 			name = MicroKonex;
 			path = ../..;
-			sourceTree = "<group>";
-		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		7CB8AD1C8854B97E1F742AF0CD381A70 /* Targets Support Files */ = {
@@ -182,10 +409,21 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				A356C9ED2C620D2FFBD6E8DE73B76B66 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				15C091ECC556A5105310D3E098FEAB34 /* Products */,
+				AF8CCBDA858E2B5A32DC220E0EB15663 /* Frameworks */,
+				922999141E1DE30EC63211C830690414 /* Pods */,
+				BC497248C8FA36C6C29FE019FB67D404 /* Products */,
 				7CB8AD1C8854B97E1F742AF0CD381A70 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		922999141E1DE30EC63211C830690414 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC601FB9DCD2CCC74DD8688783E9005B /* Konex */,
+				30ABCD63EB7A48198C5A391DE283DEA1 /* Microfutures */,
+				38C4E7EC5311DA59E51F1E336BAC9A8D /* ObjectMapper */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		A356C9ED2C620D2FFBD6E8DE73B76B66 /* Development Pods */ = {
@@ -196,12 +434,75 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		AF8CCBDA858E2B5A32DC220E0EB15663 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				6CBC41CB02E0C0BF6F83553A60383128 /* Konex.framework */,
+				67F92413BCC0684A14227A11B98DB639 /* Microfutures.framework */,
+				B05D545B686709FC85DE2E7AFB092E32 /* ObjectMapper.framework */,
+				5825AFA5A8F80EED96437F1BC21F1B93 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC497248C8FA36C6C29FE019FB67D404 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBB78589B4069982FC10B9F99C873293 /* Konex.framework */,
+				6E894F3FB5A2825623B651B16E7AA208 /* Microfutures.framework */,
+				10B99D3E8C6D6A67F89DB4AE72A470AA /* MicroKonex.framework */,
+				E935A7276271FFEF92A9508AC73B3B86 /* ObjectMapper.framework */,
+				9E54225F5AFB49E71D8558A7F2346477 /* Pods_MicroKonex_Example.framework */,
+				91FA911CE0FD949AA4EAB911830AE541 /* Pods_MicroKonex_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C41E439F5150B563CE0A217CEC76C1CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B2BF03227BCCD2DFF4463F89935ABAF7 /* Info.plist */,
+				72EDEAE8FE92636138C6D9655E3FE96E /* ObjectMapper.modulemap */,
+				245648C9D6312A21A7779845D2C38A88 /* ObjectMapper.xcconfig */,
+				07C7B2CEB11CD7FC7140F080ECF908A2 /* ObjectMapper-dummy.m */,
+				8472011CBC551AB9FA845CBA92E8571F /* ObjectMapper-prefix.pch */,
+				0862AE9902C41A4E5CCE1D0819C231A0 /* ObjectMapper-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
+			sourceTree = "<group>";
+		};
+		C630D0BB7A05E41A7735E41759129521 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				40601CAF8849CF048CD1491E0684A305 /* Info.plist */,
+				905FBC5AB8310ACBEDA2A529D250B978 /* Konex.modulemap */,
+				9CD03D6AD117597BEE8B6580D9DE8C18 /* Konex.xcconfig */,
+				1F4C9E1F822E5254E95F0ED30A3DF145 /* Konex-dummy.m */,
+				1E945C1A082BE3B406F542954B21397D /* Konex-prefix.pch */,
+				EA16FD0B4101D9C8ECB28FDD0D17048D /* Konex-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Konex";
+			sourceTree = "<group>";
+		};
+		CC601FB9DCD2CCC74DD8688783E9005B /* Konex */ = {
+			isa = PBXGroup;
+			children = (
+				AEE0662F776BB4320F72651695109CC8 /* HTTPMethod.swift */,
+				F530F945674194FC7FAA6EE6CE8CDF16 /* Konex.swift */,
+				7A1503732743532D1BA854B14D7A1543 /* KonexClient.swift */,
+				BE852489802D4FD1523FC99F2CC9E8FB /* KonexComponent.swift */,
+				2E5D28A6F7CC732D34E465E605F99CF7 /* KonexError.swift */,
+				3B1783B743C347966449FB49DA6021E3 /* KonexPlugin.swift */,
+				3A56DE0508B6EAD738E3D730B81ED4BF /* KonexReponseProcessor.swift */,
+				0C07A118EA3D189D7C61A236A3C5A7F7 /* KonexRequest.swift */,
+				3F7478A38E65B9E36F9542E8B93BAA8E /* KonexResponseValidator.swift */,
+				F8A3BB7B0FD8089139678799B11CAB43 /* NetworkLogger.swift */,
+				C630D0BB7A05E41A7735E41759129521 /* Support Files */,
+			);
+			name = Konex;
+			path = Konex;
 			sourceTree = "<group>";
 		};
 		E7B3894DACD7EE07752789BD74A18E70 /* Pods-MicroKonex_Example */ = {
@@ -225,19 +526,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		A37264D76FBD4A73A7FEDF686AFFA443 /* Headers */ = {
+		08F427C4F8CDB83C22A60BB4AD6F3D1A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7EFD6527A4281CB7AA7F13D41F16F75B /* MicroKonex-umbrella.h in Headers */,
+				D5690AC80520A2FE36528DD476D53109 /* MicroKonex-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E12C6982B9E39D08672E43A8947E39BB /* Headers */ = {
+		2324FBC0AA601DC089F736F90D5939B4 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE4845E9E3526EB862DF1470AECE03D9 /* Pods-MicroKonex_Example-umbrella.h in Headers */,
+				03B558BC5758EE9E0D94CC4405DE5078 /* ObjectMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		78393BC5711705C56C51AFAC7A07C462 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C693A41745F7188CCAC696D6D16C780D /* Pods-MicroKonex_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6A06ABAD8805DFA28B18F0D1EB3A066 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5567F97FD48D54B19030A85211BAB331 /* Konex-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D12A7EE15D471D52C5D20F3EE2E8EC12 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DAB8BB2DDCC6EB0364E46B00F73E47 /* Microfutures-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,22 +577,97 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		5A0CBA542095B01B7DC6760ABD63DC28 /* Pods-MicroKonex_Example */ = {
+		40EA59021D2FD42DD0B4DE4D4D9EFAA6 /* Konex */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 44006333BADD3087E8527F8D31CACCE7 /* Build configuration list for PBXNativeTarget "Pods-MicroKonex_Example" */;
+			buildConfigurationList = 5512F772365F0141B6248EB54A83936C /* Build configuration list for PBXNativeTarget "Konex" */;
 			buildPhases = (
-				22B6CE15AAE594C70D54A8CEDE464477 /* Sources */,
-				8C63228456CC447AB67D0BAEAD0C90C7 /* Frameworks */,
-				E12C6982B9E39D08672E43A8947E39BB /* Headers */,
+				8D85A62A5664B77C13760D06E04382F2 /* Sources */,
+				7165CF7464D3D232D5035A16C213F479 /* Frameworks */,
+				B6A06ABAD8805DFA28B18F0D1EB3A066 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				205D304F85D2D28B2EEF21504B50FB75 /* PBXTargetDependency */,
+				88B4A3FA6CF5A7EFC13A960499EC3931 /* PBXTargetDependency */,
+			);
+			name = Konex;
+			productName = Konex;
+			productReference = FBB78589B4069982FC10B9F99C873293 /* Konex.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		58506A1C2745624C74DB9B008D489C55 /* ObjectMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BCD5D6867D2E9A88046AFA6C0E15CB7D /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
+			buildPhases = (
+				7D9A4EFF29F7FC7F8D182E7ED99C76F4 /* Sources */,
+				3BF0C1016963F0F736AA344C097BD41C /* Frameworks */,
+				2324FBC0AA601DC089F736F90D5939B4 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = E935A7276271FFEF92A9508AC73B3B86 /* ObjectMapper.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6F929D0AA2BC4B61FC84DFB8C7D1EF4E /* Pods-MicroKonex_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07EDFE3D38706703CCD0EA18F1B034BB /* Build configuration list for PBXNativeTarget "Pods-MicroKonex_Example" */;
+			buildPhases = (
+				2F285FE4184C04FF2F8725EDC78114B0 /* Sources */,
+				336C9C5F00A209C14C174F99F12E0468 /* Frameworks */,
+				78393BC5711705C56C51AFAC7A07C462 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DFDA64501A22FD41C6360CEF7EA34C1 /* PBXTargetDependency */,
+				F18D502ECE00FCB54C15067474EADC52 /* PBXTargetDependency */,
+				3C0F43C67A4D59DF9A8F7A01DD4CB747 /* PBXTargetDependency */,
+				ABADC6ECF13A78AC8E4C97D338E01638 /* PBXTargetDependency */,
 			);
 			name = "Pods-MicroKonex_Example";
 			productName = "Pods-MicroKonex_Example";
-			productReference = 227EB54D9C97679F3A36AA388E33CECB /* Pods_MicroKonex_Example.framework */;
+			productReference = 9E54225F5AFB49E71D8558A7F2346477 /* Pods_MicroKonex_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		899382291472AFBE15F4BCC117F9CBD5 /* Microfutures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A29175725934F0EEE35945E76251090D /* Build configuration list for PBXNativeTarget "Microfutures" */;
+			buildPhases = (
+				478396A8330FB7EBA606C1FBFB5C25F9 /* Sources */,
+				397650F652994FB027D56AFEE3293641 /* Frameworks */,
+				D12A7EE15D471D52C5D20F3EE2E8EC12 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Microfutures;
+			productName = Microfutures;
+			productReference = 6E894F3FB5A2825623B651B16E7AA208 /* Microfutures.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C55F46FB22CC9A72BE9BC536B20DED09 /* MicroKonex */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C9D801511F36D522DB7E70EBCD12D3 /* Build configuration list for PBXNativeTarget "MicroKonex" */;
+			buildPhases = (
+				786DEE4FA1F85AA052AFBE951BA87ED0 /* Sources */,
+				9902BD0239276BB974A4A7D69350FBF5 /* Frameworks */,
+				08F427C4F8CDB83C22A60BB4AD6F3D1A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D1A6BDE05371087E31263C6C20B9B41 /* PBXTargetDependency */,
+				54E22F6DC4C2DCB76EA3DDBB35CBABC2 /* PBXTargetDependency */,
+				A3F22F49EBEE12B078EAAD5EA360DABF /* PBXTargetDependency */,
+			);
+			name = MicroKonex;
+			productName = MicroKonex;
+			productReference = 10B99D3E8C6D6A67F89DB4AE72A470AA /* MicroKonex.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F9037BC49C5B4CC25975729B364D2493 /* Pods-MicroKonex_Tests */ = {
@@ -284,24 +684,7 @@
 			);
 			name = "Pods-MicroKonex_Tests";
 			productName = "Pods-MicroKonex_Tests";
-			productReference = 136A4CB2D3AE7FBBF5818BDB1A6862A9 /* Pods_MicroKonex_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		FD96E0828FB2CA975E13100F40755C14 /* MicroKonex */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 866BA740B8D7193AFDC4CEBF88C7C3DB /* Build configuration list for PBXNativeTarget "MicroKonex" */;
-			buildPhases = (
-				2CC0329C8FC19AA310CC90F8BD0AB2FE /* Sources */,
-				62974027408963C6F754DB9C5A3D7AB1 /* Frameworks */,
-				A37264D76FBD4A73A7FEDF686AFFA443 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = MicroKonex;
-			productName = MicroKonex;
-			productReference = 6CFD642F8384DAEF25E9725A59E0B6D1 /* MicroKonex.framework */;
+			productReference = 91FA911CE0FD949AA4EAB911830AE541 /* Pods_MicroKonex_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -312,14 +695,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					5A0CBA542095B01B7DC6760ABD63DC28 = {
-						LastSwiftMigration = 0820;
-					};
-					FD96E0828FB2CA975E13100F40755C14 = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -329,32 +704,92 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 15C091ECC556A5105310D3E098FEAB34 /* Products */;
+			productRefGroup = BC497248C8FA36C6C29FE019FB67D404 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD96E0828FB2CA975E13100F40755C14 /* MicroKonex */,
-				5A0CBA542095B01B7DC6760ABD63DC28 /* Pods-MicroKonex_Example */,
+				40EA59021D2FD42DD0B4DE4D4D9EFAA6 /* Konex */,
+				899382291472AFBE15F4BCC117F9CBD5 /* Microfutures */,
+				C55F46FB22CC9A72BE9BC536B20DED09 /* MicroKonex */,
+				58506A1C2745624C74DB9B008D489C55 /* ObjectMapper */,
+				6F929D0AA2BC4B61FC84DFB8C7D1EF4E /* Pods-MicroKonex_Example */,
 				F9037BC49C5B4CC25975729B364D2493 /* Pods-MicroKonex_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		22B6CE15AAE594C70D54A8CEDE464477 /* Sources */ = {
+		2F285FE4184C04FF2F8725EDC78114B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD25E19B564D7AAAEE8B558E8685FFC5 /* Pods-MicroKonex_Example-dummy.m in Sources */,
+				738C8C9BE40E231E32B6EF8DA0848527 /* Pods-MicroKonex_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2CC0329C8FC19AA310CC90F8BD0AB2FE /* Sources */ = {
+		478396A8330FB7EBA606C1FBFB5C25F9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31082D776E3C30792FF91E9B3C8F18F2 /* MicroKonex-dummy.m in Sources */,
-				EF1C2136E0DC30F502D028F9DDA762CF /* ReplaceMe.swift in Sources */,
+				39F9551AD9E6B08C544DAA176CE17FB6 /* Microfutures-dummy.m in Sources */,
+				084D6DC0C7F243C1035E77DA017EBF34 /* Microfutures.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		786DEE4FA1F85AA052AFBE951BA87ED0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				655E83D07A7AFB5CFA562449B3047656 /* Konex+Microfutures.swift in Sources */,
+				09105EC72457C392261970B54A3FA069 /* MicroKonex-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D9A4EFF29F7FC7F8D182E7ED99C76F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA385C420449D50AC119EB2AFC762CDC /* CustomDateFormatTransform.swift in Sources */,
+				5999B5CE21686A77C1588A2503B386DC /* DataTransform.swift in Sources */,
+				94ABA30815E7EA598DE148A8574270A8 /* DateFormatterTransform.swift in Sources */,
+				79606121234A59422ED5C0ED2799A9AA /* DateTransform.swift in Sources */,
+				1B0871B6BA50D218499BC1728DB26310 /* DictionaryTransform.swift in Sources */,
+				1173A6F340C459CF4A21EE0607E4259E /* EnumOperators.swift in Sources */,
+				D24A6680CFEBC823B0705BDED94AFFEA /* EnumTransform.swift in Sources */,
+				69578E44E5F9D81E0BA936E3A24B4616 /* FromJSON.swift in Sources */,
+				38D9B9435549B179264AC16782C9AC1D /* HexColorTransform.swift in Sources */,
+				E567E7B374897DEC9E8B7BD71E381D74 /* ImmutableMappable.swift in Sources */,
+				19B937F803278BFEAAFF2262A7E81188 /* ISO8601DateTransform.swift in Sources */,
+				3232D920146A5E6D99F0CF0A6922E638 /* Map.swift in Sources */,
+				B9DE8369BD711BA6955FE2EBD1F51AC2 /* MapError.swift in Sources */,
+				1051B0CEF129B04FA71AE9DD3E53A1D8 /* Mappable.swift in Sources */,
+				011F479985EE24FE1205AEFD5DAAB449 /* Mapper.swift in Sources */,
+				B313AC90A8C9585309D3F6DAF12B3E5F /* NSDecimalNumberTransform.swift in Sources */,
+				6DE51BD5A07584CFFB9C4E4D9C88B2B3 /* ObjectMapper-dummy.m in Sources */,
+				C17AFCCB17247EE4E30278A6679A3ED8 /* Operators.swift in Sources */,
+				4D00CDDB3F39321614A551FD3B27D013 /* ToJSON.swift in Sources */,
+				1597FDAFFC79F55903CACA3D6E5F749F /* TransformOf.swift in Sources */,
+				D15E7577E1D2B47DEAFD78D546AEDE45 /* TransformOperators.swift in Sources */,
+				0F1989CAB7E1A9C9C2104A31B2924F10 /* TransformType.swift in Sources */,
+				722AF1184F5BCEC7CCAC637CBAFB0AB2 /* URLTransform.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D85A62A5664B77C13760D06E04382F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFD1930D2FA1B9B660346F367B5B5D4D /* HTTPMethod.swift in Sources */,
+				2EC0CC3EE854FAEAE8980CA71239EB2A /* Konex-dummy.m in Sources */,
+				7A3604917516BAA18607858A02FC6742 /* Konex.swift in Sources */,
+				EF98E3D061551E3E8CE9EF72B2B23B5B /* KonexClient.swift in Sources */,
+				636AEB2C695A89E1BA9761E88DE53EFD /* KonexComponent.swift in Sources */,
+				39ADDF47CD79F5E77F48D75F34C93808 /* KonexError.swift in Sources */,
+				FBD64A7021290BE1A5E54B695AE67CC7 /* KonexPlugin.swift in Sources */,
+				7BDC40D87E5E57BC9245F7E03F0053A9 /* KonexReponseProcessor.swift in Sources */,
+				3D0F678CC1B8BF169F2D7740A0A6DEA0 /* KonexRequest.swift in Sources */,
+				B75E7DA353984475DF0A4228C7596A87 /* KonexResponseValidator.swift in Sources */,
+				EA08F112A498CF284440DE7AE46D932D /* NetworkLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -369,15 +804,121 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		205D304F85D2D28B2EEF21504B50FB75 /* PBXTargetDependency */ = {
+		3C0F43C67A4D59DF9A8F7A01DD4CB747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Microfutures;
+			target = 899382291472AFBE15F4BCC117F9CBD5 /* Microfutures */;
+			targetProxy = 4D905D7F35802D57CC22F025904C3A28 /* PBXContainerItemProxy */;
+		};
+		54E22F6DC4C2DCB76EA3DDBB35CBABC2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Microfutures;
+			target = 899382291472AFBE15F4BCC117F9CBD5 /* Microfutures */;
+			targetProxy = 0CE3395EBFC42BECBDC742B180CBDC8F /* PBXContainerItemProxy */;
+		};
+		6DFDA64501A22FD41C6360CEF7EA34C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Konex;
+			target = 40EA59021D2FD42DD0B4DE4D4D9EFAA6 /* Konex */;
+			targetProxy = 4792F3ECE0D2E2EF2EEA8C5117F5D50E /* PBXContainerItemProxy */;
+		};
+		88B4A3FA6CF5A7EFC13A960499EC3931 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 58506A1C2745624C74DB9B008D489C55 /* ObjectMapper */;
+			targetProxy = 19E927C9223BC0BED99C57122DF5BF44 /* PBXContainerItemProxy */;
+		};
+		9D1A6BDE05371087E31263C6C20B9B41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Konex;
+			target = 40EA59021D2FD42DD0B4DE4D4D9EFAA6 /* Konex */;
+			targetProxy = B4DE0D96CB8DCB11ABF768A8E2601DB8 /* PBXContainerItemProxy */;
+		};
+		A3F22F49EBEE12B078EAAD5EA360DABF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 58506A1C2745624C74DB9B008D489C55 /* ObjectMapper */;
+			targetProxy = 6B42C4768023D97FE1AE1AA6A47E623A /* PBXContainerItemProxy */;
+		};
+		ABADC6ECF13A78AC8E4C97D338E01638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ObjectMapper;
+			target = 58506A1C2745624C74DB9B008D489C55 /* ObjectMapper */;
+			targetProxy = 341E5D4A986D587CA54256BD9923262A /* PBXContainerItemProxy */;
+		};
+		F18D502ECE00FCB54C15067474EADC52 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MicroKonex;
-			target = FD96E0828FB2CA975E13100F40755C14 /* MicroKonex */;
-			targetProxy = 230E021073293FDB3FADF3CECA90E843 /* PBXContainerItemProxy */;
+			target = C55F46FB22CC9A72BE9BC536B20DED09 /* MicroKonex */;
+			targetProxy = 0343614BF860B783B2F604BBE2050560 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		05F46F77B418A4856CFA829E77A0D442 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C003FEDD16CF746234D4F19A3287E382 /* MicroKonex.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MicroKonex/MicroKonex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MicroKonex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MicroKonex/MicroKonex.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MicroKonex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1645B36CE75F7F8CBD5DBD20B9271B5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 245648C9D6312A21A7779845D2C38A88 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1829765D1F30D96FBB260AA3CA99810C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6854DF23590C53CB4F0A636B650CED9E /* Pods-MicroKonex_Tests.debug.xcconfig */;
@@ -413,9 +954,9 @@
 			};
 			name = Debug;
 		};
-		2B19AFA7BCB3FF084F9A5EDD858816BB /* Release */ = {
+		263E826257558C01F01E266383ED6F99 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C003FEDD16CF746234D4F19A3287E382 /* MicroKonex.xcconfig */;
+			baseConfigurationReference = AEE438A591F649BEC7B53DED69624E91 /* Microfutures.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -428,14 +969,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MicroKonex/MicroKonex-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MicroKonex/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Microfutures/Microfutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Microfutures/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MicroKonex/MicroKonex.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Microfutures/Microfutures.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = MicroKonex;
+				PRODUCT_NAME = Microfutures;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -445,7 +986,40 @@
 			};
 			name = Release;
 		};
-		3423F67F1DE88F15B5C5144670BA18B9 /* Debug */ = {
+		5BA9509AB11BD84F1A836074A5FE1571 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 245648C9D6312A21A7779845D2C38A88 /* ObjectMapper.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ObjectMapper;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6C1F33E9821B7C50898D35B57794980F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DE0E4D509C494D9A23F01D0568B9F7B9 /* Pods-MicroKonex_Example.debug.xcconfig */;
 			buildSettings = {
@@ -475,6 +1049,38 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		77DABB063EDA97BD1AB8FBA8C35EE156 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C003FEDD16CF746234D4F19A3287E382 /* MicroKonex.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MicroKonex/MicroKonex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MicroKonex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MicroKonex/MicroKonex.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MicroKonex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -482,41 +1088,38 @@
 			};
 			name = Debug;
 		};
-		566CADCC66C9C5899DA39ED26E9BFEFF /* Release */ = {
+		846E4404AE58D8DD2F002F3ACAB99FAC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AAF5F52C37B102DD4F49C022C9A508F /* Pods-MicroKonex_Example.release.xcconfig */;
+			baseConfigurationReference = AEE438A591F649BEC7B53DED69624E91 /* Microfutures.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-MicroKonex_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Microfutures/Microfutures-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Microfutures/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-MicroKonex_Example/Pods-MicroKonex_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_MicroKonex_Example;
+				MODULEMAP_FILE = "Target Support Files/Microfutures/Microfutures.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Microfutures;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -557,6 +1160,39 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		9A0EC33F5FEFC0D02938F08DDE14FFB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD03D6AD117597BEE8B6580D9DE8C18 /* Konex.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Konex/Konex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Konex/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Konex/Konex.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Konex;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -602,38 +1238,72 @@
 			};
 			name = Debug;
 		};
-		C4A885AF3132709F86C80F0AAF036672 /* Debug */ = {
+		9ECCFF6897519CBBECAD9575C1FB7DEE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C003FEDD16CF746234D4F19A3287E382 /* MicroKonex.xcconfig */;
+			baseConfigurationReference = 8AAF5F52C37B102DD4F49C022C9A508F /* Pods-MicroKonex_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/MicroKonex/MicroKonex-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/MicroKonex/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-MicroKonex_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MicroKonex_Example/Pods-MicroKonex_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MicroKonex_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D9D58957B483E9794612BF7B676A0077 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CD03D6AD117597BEE8B6580D9DE8C18 /* Konex.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Konex/Konex-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Konex/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/MicroKonex/MicroKonex.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = MicroKonex;
+				MODULEMAP_FILE = "Target Support Files/Konex/Konex.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Konex;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		EF228AE52FA03F6274873A3FFB607643 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -673,20 +1343,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		07EDFE3D38706703CCD0EA18F1B034BB /* Build configuration list for PBXNativeTarget "Pods-MicroKonex_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C1F33E9821B7C50898D35B57794980F /* Debug */,
+				9ECCFF6897519CBBECAD9575C1FB7DEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
 				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		44006333BADD3087E8527F8D31CACCE7 /* Build configuration list for PBXNativeTarget "Pods-MicroKonex_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3423F67F1DE88F15B5C5144670BA18B9 /* Debug */,
-				566CADCC66C9C5899DA39ED26E9BFEFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -700,11 +1370,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		866BA740B8D7193AFDC4CEBF88C7C3DB /* Build configuration list for PBXNativeTarget "MicroKonex" */ = {
+		5512F772365F0141B6248EB54A83936C /* Build configuration list for PBXNativeTarget "Konex" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				C4A885AF3132709F86C80F0AAF036672 /* Debug */,
-				2B19AFA7BCB3FF084F9A5EDD858816BB /* Release */,
+				9A0EC33F5FEFC0D02938F08DDE14FFB4 /* Debug */,
+				D9D58957B483E9794612BF7B676A0077 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C9D801511F36D522DB7E70EBCD12D3 /* Build configuration list for PBXNativeTarget "MicroKonex" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77DABB063EDA97BD1AB8FBA8C35EE156 /* Debug */,
+				05F46F77B418A4856CFA829E77A0D442 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A29175725934F0EEE35945E76251090D /* Build configuration list for PBXNativeTarget "Microfutures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846E4404AE58D8DD2F002F3ACAB99FAC /* Debug */,
+				263E826257558C01F01E266383ED6F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BCD5D6867D2E9A88046AFA6C0E15CB7D /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BA9509AB11BD84F1A836074A5FE1571 /* Debug */,
+				1645B36CE75F7F8CBD5DBD20B9271B5A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

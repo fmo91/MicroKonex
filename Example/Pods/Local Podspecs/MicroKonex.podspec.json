@@ -1,7 +1,7 @@
 {
   "name": "MicroKonex",
   "version": "0.1.0",
-  "summary": "A short description of MicroKonex.",
+  "summary": "Microfutures extensions for Konex networking library.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/fmo91/MicroKonex",
   "license": {
@@ -18,5 +18,13 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "MicroKonex/Classes/**/*"
+  "source_files": "MicroKonex/Classes/**/*",
+  "dependencies": {
+    "Konex": [
+      "~> 0.2"
+    ],
+    "Microfutures": [
+      "~> 0.1"
+    ]
+  }
 }

@@ -84,8 +84,14 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Konex/Konex.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MicroKonex/MicroKonex.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Microfutures/Microfutures.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/Konex/Konex.framework"
   install_framework "$BUILT_PRODUCTS_DIR/MicroKonex/MicroKonex.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/Microfutures/Microfutures.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/ObjectMapper/ObjectMapper.framework"
 fi
